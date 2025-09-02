@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutri-vida</title>
+
+    <link rel="shortcut icon" href="../imagens/Img_logomarca.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../estilo/estilo.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>Nutri-vida</h1>
+        <p>Saúde, estética e desempenho na vida de quem escolhe mudar</p>
+    </header>
+
+    <p id="burguer" onclick="clickmenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </p>
+    
+<main>
+
+    <menu id="menu">
+        <ul>
+            
+            <li><p>Menu de navegação:</p>
+            
+
+            <li><a href="index.html">Inicio</a>
+
+            <li><a href="Diabete.html">Diabetes</a>
+
+            <li><a href="hipertensão.html">Hipertensão</a>
+
+            <li><a href="hipertrofia.html">Hipertrofia muscular</a>
+
+            <li><a href="obesidade.html">Obesidade</a>
+
+            <li><a href="contato.html">Entre em contato</a>
+
+        </ul>
+    </menu>
+
+    <article>
+        <h1>Diabetes</h1>
+        <p>
+            A diabetes é uma doença em que o corpo não consegue controlar corretamente o açúcar no sangue. Isso acontece porque a insulina, que é o hormônio responsável por levar a glicose para dentro das células, não funciona bem ou não é produzida em quantidade suficiente. Como resultado, o nível de glicose no sangue fica elevado, causando desequilíbrios no organismo.
+        </p>
+        <p>
+            Quando não é controlada, a diabetes pode trazer várias complicações. Entre elas estão: excesso de glicose no sangue, sede e fome em excesso, vontade frequente de urinar e cansaço. A longo prazo, pode provocar problemas graves como dificuldade de cicatrização, alterações na visão, doenças no coração, nos rins e nos nervos.
+        </p>
+        <p>
+            A prevenção da diabetes depende, principalmente, de hábitos de vida saudáveis. Manter uma alimentação equilibrada, praticar atividades físicas regularmente e controlar o peso são fatores essenciais. Também é importante evitar o cigarro, reduzir o consumo de álcool e realizar exames de rotina para acompanhar os níveis de glicose no sangue.
+        </p>
+        <h2>definições:</h2>
+        <p>
+            <strong>Hipoglicemia:</strong> A hipoglicemia é quando o nível de açúcar (glicose) no sangue fica abaixo do normal. Como a glicose é a principal fonte de energia do corpo, especialmente do cérebro, a queda pode causar sintomas imediatos e até ser perigosa se não tratada rapidamente.
+        </p>
+        <p>
+            Quando o açúcar do sangue cai muito, a pessoa pode sentir: tremores, suor frio, fraqueza, tontura, fome intensa, dor de cabeça, palpitações e irritabilidade. Em casos graves, pode ocorrer confusão mental, desmaio, convulsões e até risco de morte se não houver tratamento imediato.
+        </p>
+        <p>
+            A prevenção depende da causa. Quem tem diabetes e usa insulina ou remédios precisa se alimentar nos horários certos, não pular refeições e ajustar a dose corretamente. Também é importante não exagerar em exercícios sem orientação e sempre carregar um lanche rápido (como balas ou suco) para casos de emergência. Para pessoas sem diabetes, manter uma alimentação equilibrada e evitar longos períodos de jejum ajuda a prevenir.
+        </p>
+        <p>
+            <strong>Normal:</strong> Os valores normais de glicose em jejum (sem comer por 8 horas) ficam entre 70 e 99 mg/dL. Esse é o nível ideal para que o corpo funcione bem e tenha energia suficiente.
+        </p>
+        <p>
+            Quando a glicose está na faixa certa, o corpo tem energia para as células sem causar excesso no sangue. Isso ajuda a manter o equilíbrio, evitar sintomas ruins e prevenir doenças como diabetes ou hipoglicemia.
+        </p>
+        <p>
+            Para manter a glicose em níveis normais, é importante ter uma alimentação saudável, praticar atividade física regularmente, evitar excesso de açúcar e fazer exames de rotina. Quem tem diabetes deve seguir corretamente o tratamento médico.
+        </p>
+        <p>
+            <strong>Pré-diabetes</strong> A pré-diabetes é quando o nível de açúcar no sangue está acima do normal, mas ainda não é alto o suficiente para ser considerado diabetes. É um alerta do corpo de que algo não está indo bem no metabolismo da glicose.
+        </p>
+        <p>
+            Na maioria das vezes, a pré-diabetes não dá sintomas claros. Mas, se não for cuidada, pode evoluir para diabetes tipo 2. Além disso, já aumenta o risco de problemas no coração e nos vasos sanguíneos.
+        </p>
+        <p>
+            É possível reverter a pré-diabetes com hábitos saudáveis. Isso inclui: ter uma alimentação equilibrada (menos açúcar e frituras, mais verduras e grãos integrais), praticar atividade física regular, controlar o peso, dormir bem e evitar cigarro e excesso de álcool.
+        </p>
+
+        <section>
+            <h1>verificador</h1>
+            <p>
+                Para que o algoritimo do site consigua descobrir seu poblema (se ouver), coloque as informações pedidas abaixo: 
+            </p>
+            <p>
+                Peso: <input type="number" id="peso" min="0"> Kg
+            </p>
+            <p>
+                Altura: <input type="number" id="altura" min="0"> Cm
+            </p>
+            <p>
+                Idade: <input type="number" id="idade" min="0"> anos
+            </p>
+            <p>
+                fator de atividade: 
+                <select id="fatorA">
+                    <option value="sedentario">Sedentário</option>
+
+                    <option value="levementeativo">Levemente ativo (1 - 3x por semana)</option>
+
+                    <option value="moderadamenteativo">Moderadamente ativo (3 - 5x por semana)</option>
+
+                    <option value="muitoativo">Muito ativo (5 - 6x por semana)</option>
+
+                    <option value="extremamenteativo">Extremamente ativo (2x por dia)</option>
+                </select>
+            </p>
+            <p>
+                Genero:
+                <input type="radio" name="genero" id="mascolino" checked>
+                <label for="mascolino">Mascolino</label>
+
+                <input type="radio" name="genero" id="feminino">
+                <label for="feminino">Feminino</label>
+            </p>
+            <p>
+                Coloque os valor do exame. se não tiver o exame em mãos, espere até ter o exame em mãos para depois acessar o site.
+            </p>
+            <p>
+                Tipo de exame:
+                <select id="exame">
+
+                    <option value="mg/dL">Glicemia em jejum (mg/dL)</option>
+
+                    <option value="HbA1c">Hemoglobina glicada (HbA1c)</option>
+
+                    <option value="TOTG">Teste oral de tolerancia à glicose (TOTG)</option>
+                </select>
+            </p>
+            <p>
+                valor do exame:
+                <input type="number" id="valorexame" min="0">
+            </p>
+            <p>
+                <input type="button" value="verificar" onclick="verificar()">
+            </p>
+
+            <div id="res">
+
+            </div>
+
+        </section>
+        
+    </article>
+</main>
+<footer>
+    <p>&copy; site criado por Vitor Kruger gomes</p>
+</footer>
+
+
+
+
+    <script src="../script/diabete.js"></script>
+</body>
+</html>

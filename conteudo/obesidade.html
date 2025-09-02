@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutri-vida</title>
+
+    <link rel="shortcut icon" href="../imagens/Img_logomarca.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../estilo/estilo.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>Nutri-vida</h1>
+        <p>Saúde, estética e desempenho na vida de quem escolhe mudar</p>
+    </header>
+
+    <p id="burguer" onclick="clickmenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </p>
+    
+<main>
+
+    <menu id="menu">
+        <ul>
+            
+            <li><p>Menu de navegação:</p>
+            
+
+            <li><a href="index.html">Inicio</a>
+
+            <li><a href="Diabete.html">Diabetes</a>
+
+            <li><a href="hipertensão.html">Hipertensão</a>
+
+            <li><a href="obesidade.html">Obesidade</a>
+
+            <li><a href="hipertrofia.html">Hipertrofia muscular</a>
+
+            <li><a href="contato.html">Entre em contato</a>
+
+        </ul>
+    </menu>
+
+    <article>
+        <h1>Obesidade</h1>
+
+        <p>
+            A obesidade é uma condição caracterizada pelo acúmulo excessivo de gordura corporal, que ocorre quando a ingestão de calorias é maior do que o gasto energético ao longo do tempo. Ela é geralmente medida pelo Índice de Massa Corporal (IMC), sendo considerada obesidade quando o IMC é igual ou superior a 30. Esse quadro não é apenas uma questão estética, mas sim um problema de saúde que aumenta o risco de várias doenças.
+        </p>
+        <p>
+            A obesidade pode causar diversos problemas de saúde, como hipertensão arterial, diabetes tipo 2, doenças cardiovasculares, alterações hormonais, apneia do sono, problemas nas articulações, além de impactar a saúde mental, aumentando as chances de ansiedade, depressão e baixa autoestima. O excesso de gordura no corpo provoca inflamação crônica e sobrecarrega órgãos vitais, o que eleva o risco de complicações graves, inclusive morte precoce.
+        </p>
+        <p>
+            O tratamento da obesidade envolve mudanças de hábitos de vida. O primeiro passo é adotar uma alimentação equilibrada, com controle de calorias, rica em frutas, verduras, legumes, proteínas magras e grãos integrais, ao mesmo tempo em que se reduz o consumo de ultraprocessados, frituras, açúcares e bebidas alcoólicas. Além disso, a prática regular de atividade física é essencial para aumentar o gasto energético e melhorar a saúde geral. Em alguns casos, pode ser necessário acompanhamento médico, uso de medicamentos para auxiliar na perda de peso ou até mesmo cirurgia bariátrica, quando o quadro é mais grave.
+        </p>
+        <p>
+            O IMC (Índice de Massa Corporal) é uma medida usada para avaliar se uma pessoa está dentro do peso adequado em relação à sua altura. Ele é calculado dividindo o peso (em quilos) pela altura ao quadrado (em metros). A formula é: (peso ÷ altura²)
+        </p>
+        <p>
+            exemplo: Uma pessoa pesa 70kg e tem 1,78m de altura.
+        </p>
+        <p>
+            IMC = 70 ÷ (1,78)² 
+        </p>
+        <p>
+            IMC = 22,09
+        </p>
+
+        <section>
+            <h1>verificador</h1>
+            <p>
+                Para que o algoritimo do site consigua descobrir seu poblema (se ouver), coloque as informações pedidas abaixo: 
+            </p>
+            <p>
+                Peso: <input type="number" id="peso" min="0"> Kg
+            </p>
+            <p>
+                Altura: <input type="number" id="altura" min="0"> Cm
+            </p>
+            <p>
+                Idade: <input type="number" id="idade" min="0"> anos
+            </p>
+            <p>
+                fator de atividade: 
+                <select id="fatorA">
+                    <option value="sedentario">Sedentário</option>
+
+                    <option value="levementeativo">Levemente ativo (1-3x por semana)</option>
+
+                    <option value="moderadamenteativo">Moderadamente ativo (3-5x por semana)</option>
+
+                    <option value="muitoativo">Muito ativo (5-6x por semana)</option>
+
+                    <option value="extremamenteativo">Extremamente ativo (2x por dia)</option>
+                </select>
+            </p>
+            <p>
+                Genero:
+                <input type="radio" name="genero" id="mascolino" checked>
+                <label for="mascolino">Mascolino</label>
+
+                <input type="radio" name="genero" id="feminino">
+                <label for="feminino">Feminino</label>
+            </p>
+            
+            <p>
+                IMC: <input type="number" id="IMC" min="0">
+            </p>
+            <div id="descobrir">
+
+            </div>
+            <p>
+                <input type="button" value="verificar" onclick="verificar()">
+            </p>
+
+
+            <div id="res">
+
+            </div>
+
+        </section>
+        
+    </article>
+</main>
+<footer>
+    <p>&copy; site criado por Vitor Kruger gomes</p>
+</footer>
+
+
+
+
+    <script src="../script/obesidade.js"></script>
+</body>
+</html>
